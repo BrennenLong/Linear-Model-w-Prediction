@@ -1,0 +1,26 @@
+---
+title: "Linear Model With Prediction"
+author: "Brennen Long"
+date: "3/31/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r include=FALSE}
+require(tidyverse)
+require(tigerstats)
+require(rgl)
+require(knitr)
+if(!require("rglwidget")) {install.packages("rglwidget");require("rglwidget")}
+```
+
+```{r}
+data <- read.csv(file="https://onlinestatbook.com/case_studies_rvls/physical_strength/data.txt",sep="",header=TRUE) 
+```
